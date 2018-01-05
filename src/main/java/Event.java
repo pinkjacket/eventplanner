@@ -1,10 +1,12 @@
 public class Event {
     private int people;
     private int foodType;
+    private int drinkType;
 
-    public Event(int numGuests, int foodLevel) {
+    public Event(int numGuests, int foodLevel, int drinkLevel) {
         people = numGuests;
         foodType = foodLevel;
+        drinkType = drinkLevel;
     }
 
     public int getGuests() {
@@ -12,7 +14,7 @@ public class Event {
     }
 
     public int getDetails() {
-        int cost = people * 10 * foodType;
+        int cost = people * (foodType + drinkType + 10);
         return cost;
     }
 }
