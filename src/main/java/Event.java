@@ -24,7 +24,11 @@ public class Event {
         int newCost = 0;
         if (promoCode.equals("fiftyoff")) {
             newCost = baseCost - 50;
-        } else {
+        } else if( promoCode.equals("freeshow")) {
+            showType = 0;
+            newCost = getDetails();
+        }
+        else {
             newCost = baseCost;
         }
         return newCost;

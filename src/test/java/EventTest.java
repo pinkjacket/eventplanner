@@ -38,4 +38,10 @@ public class EventTest {
         assertEquals(1100, testEvent.useCoupon(testEvent.getDetails(), "fiftyoff"));
     }
 
+    @Test
+    public void useCoupon_addFreeShowCoupon() {
+        Event testEvent = new Event (50, 5, 3, 5);
+        assertEquals(900, testEvent.useCoupon(testEvent.getDetails(), "freeshow"));
+    }
+
 }
