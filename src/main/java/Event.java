@@ -22,7 +22,7 @@ public class Event {
 
     public int useCoupon(int baseCost, String promoCode) {
         int newCost = 0;
-        if (promoCode.equals("fifty")) {
+        if (promoCode.equals("fiftyoff")) {
             newCost = baseCost - 50;
         } else {
             newCost = baseCost;
