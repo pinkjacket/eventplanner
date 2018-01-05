@@ -17,7 +17,7 @@ public class EventTest {
     @Test
     public void getDetails_addFood() {
         Event testEvent = new Event (50, 5);
-        assertEquals (250, testEvent.getDetails());
+        assertEquals (2500, testEvent.getDetails());
     }
 
 }
