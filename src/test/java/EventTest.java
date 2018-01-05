@@ -8,4 +8,10 @@ public class EventTest {
     assertEquals(1,testEvent.getGuests());
     }
 
+    @Test
+    public void getGuests_getMorePeople_50() {
+        Event testEvent = new Event(50);
+        assertEquals(50,testEvent.getGuests());
+    }
+
 }
