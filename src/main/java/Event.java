@@ -19,4 +19,14 @@ public class Event {
         int cost = people * (foodType + drinkType + showType + 10);
         return cost;
     }
+
+    public int useCoupon(int baseCost, String promoCode) {
+        int newCost = 0;
+        if (promoCode.equals("fifty")) {
+            newCost = baseCost - 50;
+        } else {
+            newCost = baseCost;
+        }
+        return newCost;
+    }
 }

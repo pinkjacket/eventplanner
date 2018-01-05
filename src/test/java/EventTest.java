@@ -28,8 +28,14 @@ public class EventTest {
 
     @Test
     public void getDetails_addShow() {
-        Event testEvent = new Event (50, 5, 3, 4);
+        Event testEvent = new Event (50, 5, 3, 5);
         assertEquals (1150, testEvent.getDetails());
+    }
+
+    @Test
+    public void useCoupon_addFiftyOffCoupon() {
+        Event testEvent = new Event (50, 5, 3, 5);
+        assertEquals(1100, testEvent.useCoupon(testEvent.getDetails(), "fiftyoff"));
     }
 
 }
