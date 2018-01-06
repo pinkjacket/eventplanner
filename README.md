@@ -19,7 +19,7 @@ _A party planning app that takes number of guests, food type, drink type, and en
 | Choose drink type                   | 50 guests, food level 5, drink level 3                  | 900                       |
 | Choose entertainment            | 50 guests, food level 5, drink level 3, show level 5              | 1150                    |
 | Take coupon codes for discounts | 50 guests, food level 5, drink level 3, show level 5, coupon code "fiftyoff" | 1100    |
-| Add additional coupon code | 50 guests, food level 5, drink level 3, show level 5, coupon code "fiftyoff" | 900    |
+| Add additional coupon code | 50 guests, food level 5, drink level 3, show level 5, coupon code "freeshow" | 900    |
 
 ## Setup/Installation Requirements
 
