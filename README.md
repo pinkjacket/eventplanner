@@ -13,35 +13,30 @@ _A party planning app that takes number of guests, food type, drink type, and en
 | Spec                            | Input                                   | Output                                       |
 |---------------------------------|-----------------------------------------|----------------------------------------------|
 |                                 |                                         |                                              |
-| Recognize one party guest       | 1                                       | 1 guest                                      |
-| Recognize multiple guests       | 50                                      | 50 guests                                    |
-| Choose food                     | 50 guests, pizza                        | 50 guests, pizza                             |
-| Choose drinks                   | 50 guests, pizza, wine                  | 50 guests, pizza, wine                       |
-| Choose entertainment            | 50 guests, pizza, wine, DJ              | 50 guests, pizza, wine, DJ                   |
-| Return price                    | 50 guests, pizza, wine, DJ              | 50 guests, pizza, wine, DJ, applicable price |
-| Take coupon codes for discounts | 50 guests, pizza, wine, DJ, coupon code | 50 guests, pizza, wine, DJ, lowered price    |
+| Recognize one party guest       | 1                                       | 1                                      |
+| Recognize multiple guests       | 50                                      | 50                                    |
+| Choose food type, return total price                     | 50 guests, food type 5                        | 750                              |
+| Choose drink type                   | 50 guests, food level 5, drink level 3                  | 900                       |
+| Choose entertainment            | 50 guests, food level 5, drink level 3, show level 5              | 1150                    |
+| Take coupon codes for discounts | 50 guests, food level 5, drink level 3, show level 5, coupon code "fiftyoff" | 1100    |
+| Add additional coupon code | 50 guests, food level 5, drink level 3, show level 5, coupon code "fiftyoff" | 900    |
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
+* _Clone or download the repository_
+* _Run App.java_
 
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
-
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_While this is how it is designed, the system currently asks the user to enter the number equal to the price of their selection. Therefore, you could put in whatever numbers you want and the program will take and run them. It does work accurately if given the numbers it requests, however._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Java_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This software is licensed under the MIT license*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2018 **_James Donlan_**
